@@ -109,7 +109,7 @@ jobs:
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         set -e
-        lunch 5 && make clean && mka adbd ${{ inputs.BUILD_TARGET }}image
+        lunch 3 && make clean && mka adbd ${{ inputs.BUILD_TARGET }}image
         popd
 
     - name: Set Build Date # Build date in UTC
